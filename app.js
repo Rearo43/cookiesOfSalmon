@@ -4,14 +4,9 @@ var hours = ['6am','7am','8am','9am','10am','11am','12pm', '1pm', '2pm', '3pm', 
 
 /// STORE DATA A-Z
 
-var dubai = new inputStoreData('DUBAI', 11, 38, 3.7);
-var lima = new inputStoreData('LIMA', 2, 16, 4.6);
-var paris = new inputStoreData('PARIS', 20, 38, 2.3);
-var seattle = new inputStoreData('SEATTLE', 23, 65, 6.3);
-var tokyo = new inputStoreData('TOKYO', 3, 24, 1.2);
 
 function inputStoreData(name, min, max, avgCookie) {
-  this.store = name;
+  this.name = name;
   this.minCustomer = min;
   this.maxCustomer = max;
   this.avgCookieEchPerson = avgCookie;
@@ -27,7 +22,7 @@ inputStoreData.prototype.calcCustomerEchHr = function(){
     this.customerEchHr.push(custThisHr);
 
   }
-},
+};
 
 inputStoreData.prototype.calcCookieEchHr = function(){
   this.calcCustomerEchHr();
@@ -38,7 +33,7 @@ inputStoreData.prototype.calcCookieEchHr = function(){
 
     this.cookieEchHr.push(fullcookiesEchHr);
   }
-},
+};
 
 inputStoreData.prototype.totalCookiesSoldDay = function(){
   this.calcCookieEchHr();
@@ -49,7 +44,7 @@ inputStoreData.prototype.totalCookiesSoldDay = function(){
   }
   return this.cookiesPerDay;
 
-},
+};
 
 inputStoreData.prototype.render = function(){
   this.totalCookiesSoldDay();
@@ -69,9 +64,21 @@ inputStoreData.prototype.render = function(){
   anHrCookies2.textContent = this.cookiesPerDay;
   tableRowPE.appendChild(anHrCookies2);
   parentElement.appendChild(tableRowPE);
-},
+};
 
 
+
+
+
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+var dubai = new inputStoreData('DUBAI', 11, 38, 3.7);
+var lima = new inputStoreData('LIMA', 2, 16, 4.6);
+var paris = new inputStoreData('PARIS', 20, 38, 2.3);
+var seattle = new inputStoreData('SEATTLE', 23, 65, 6.3);
+var tokyo = new inputStoreData('TOKYO', 3, 24, 1.2);
 
 dubai.render();
 lima.render();
@@ -79,8 +86,7 @@ paris.render();
 seattle.render();
 tokyo.render();
 
-function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+
+/// Slides of Pictures
 
 
