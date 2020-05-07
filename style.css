@@ -1,56 +1,79 @@
-*{
-    border: 3px solid black;
-}
-
-article{
-    border: 3px solid black;
-    width: 400px;
-    height: 375px;
-    margin: 25px;
- 
-}
-
-
-table{
-    border: 3px solid black;
-    text-align: right;
-    background-color: #8d6a53;
-    padding: 10px;
-
-    
-    
-}
-
-td{
-    border: 1px dotted black;
-    text-align: center;
-    margin: 6px;
-    padding: 5px;
-}
-
-.slideShow{
-    height: 150px;
-    float: right;
-    text-align: center;
-    
-}
-li{
-    border: 3px solid black;
-    float: left;
-    margin-right: 50px;
-    padding-right: 15px;
-    font-size: 1em;
-    
-    
-    
-}
-
-.article3{
-    float: right;
-
-}
-
 h1{
-    font-size: 8em;
     text-align: center;
+    font-size: 50px;
+    color: rgba(183, 228, 189, 0.714);
 }
+
+
+body{
+    border: 2px dotted rgba(47, 148, 10, 0.854);
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgb(15, 77, 185);
+    border-radius: 11px;
+
+}
+
+/* if my text or anything is too big this makes it so you can scroll instead of overlapping. */
+main{
+    overflow: scroll;
+
+}
+
+/* top of pyramid */
+nav, #bigMiddle, footer{
+    margin: 1%;
+    background-color: rgba(207, 209, 212, 0.933);
+
+}
+
+/* middle of pyramid */
+.small-1, .small-2, .small-3{
+    width: 35%;
+    float: left;
+    margin: 1%;
+    background-color: rgba(207, 209, 212, 0.933);
+
+}
+
+/* center pyramid I thought I'd have to do small-2 as well but it pushed everything over so small-2 doesn't need a right margin */
+.small-1{
+    margin-left: 15%;
+}
+
+/* bottom of pyramid */
+.small-3{
+    margin-right: 25%;
+    margin-left: 25%;
+    width: 50%;
+    float: left;
+
+
+}
+
+
+li{
+    display: inline;
+    padding: 3px;
+
+}
+
+
+a{
+    margin-left: 155px;
+    color: black;
+}
+
+/* last block */
+nav, footer{
+    padding: 7px;
+    background-color: rgba(207, 209, 212, 0.933);
+
+}
+
+/* need this down here so it grabs bigMiddle as well */
+article{
+    height: 200px;
+    
+}
+
