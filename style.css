@@ -1,3 +1,56 @@
 *{
-    background-color: aquamarine;
+    border: 3px solid black;
+}
+
+article{
+    border: 3px solid black;
+    width: 400px;
+    height: 375px;
+    margin: 25px;
+ 
+}
+
+
+table{
+    border: 3px solid black;
+    text-align: right;
+    background-color: #8d6a53;
+    padding: 10px;
+
+    
+    
+}
+
+td{
+    border: 1px dotted black;
+    text-align: center;
+    margin: 6px;
+    padding: 5px;
+}
+
+.slideShow{
+    height: 150px;
+    float: right;
+    text-align: center;
+    
+}
+li{
+    border: 3px solid black;
+    float: left;
+    margin-right: 50px;
+    padding-right: 15px;
+    font-size: 1em;
+    
+    
+    
+}
+
+.article3{
+    float: right;
+
+}
+
+h1{
+    font-size: 8em;
+    text-align: center;
 }
