@@ -74,6 +74,7 @@ nav, footer, .change{
 /* need this down here so it grabs bigMiddle as well */
 article{
     height: 200px;
+    background-color: var(--nav-color);
     
 }
 
@@ -81,5 +82,9 @@ article{
 .change{
     background-color: var(--nav-color);
     --nav-color: rgba(207, 209, 212, 0.933);
+}
+
+.changeColor{
+    background-color: darkblue;
 }
 
