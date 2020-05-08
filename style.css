@@ -21,7 +21,7 @@ main{
 }
 
 /* top of pyramid */
-nav, #bigMiddle, footer{
+nav, #bigMiddle, footer, .change{
     margin: 1%;
     background-color: rgba(207, 209, 212, 0.933);
 
@@ -65,7 +65,7 @@ a{
 }
 
 /* last block */
-nav, footer{
+nav, footer, .change{
     padding: 7px;
     background-color: rgba(207, 209, 212, 0.933);
 
@@ -75,5 +75,11 @@ nav, footer{
 article{
     height: 200px;
     
+}
+
+
+.change{
+    background-color: var(--nav-color);
+    --nav-color: rgba(207, 209, 212, 0.933);
 }
 

@@ -1,7 +1,8 @@
 'use strict';
 /// Ask question: is there a way to do this shotter + so you can have the holiday hours ready and just run the code when the times right?
+var parentElement = document.getElementById('tableOfSales');
 var hours = ['6am','7am','8am','9am','10am','11am','12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
-
+var allStoresTotal = [];
 /// STORE DATA A-Z
 
 
@@ -13,6 +14,7 @@ function inputStoreData(name, min, max, avgCookie) {
   this.cookieEchHr = [];
   this.customerEchHr = [];
   this.cookiesPerDay = 0;
+  allStoresTotal.push(this);
 }
 
 inputStoreData.prototype.calcCustomerEchHr = function(){
@@ -49,7 +51,7 @@ inputStoreData.prototype.totalCookiesSoldDay = function(){
 inputStoreData.prototype.render = function(){
   this.totalCookiesSoldDay();
   console.log(this.cookiesPerDay);
-  var parentElement = document.getElementById('tableOfSales');
+
   var tableRowPE = document.createElement('tr');
   var tableHeader = document.createElement('th');
 
@@ -66,7 +68,17 @@ inputStoreData.prototype.render = function(){
   parentElement.appendChild(tableRowPE);
 };
 
+function renderBottomTotals(){
+  for(var i=0; i<hours.length; i++){
 
+    var sum = 0;
+
+    for(var j=0; j<allStoresTotal.length; j++){
+      console.log('inner loop', sum);
+      sum += allStoresTotal[j].cookieEchHr[i];
+    }
+  }
+}
 
 
 
@@ -85,8 +97,9 @@ lima.render();
 paris.render();
 seattle.render();
 tokyo.render();
+renderBottomTotals();
 
 
-/// Slides of Pictures
+
 
 
