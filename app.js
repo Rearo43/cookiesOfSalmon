@@ -100,12 +100,3 @@ tokyo.render();
 renderBottomTotals();
 
 
-
-function handleFormSubmit(event){
-  event.preventDefault();
-
-  var inputStoreData = event.target.inputStoreData.value;
-  var minCustomer = 
-
-}
-

@@ -1,0 +1,20 @@
+input.invalid{
+    background-color: rgba(230, 94, 230, 0.782);
+
+}
+
+header{
+    border: 5px solid black;
+}
+
+main{
+    width: 200px;
+    height: 400px;
+    border: 3px solid black;
+    margin: 5px;
+    position: relative;
+    margin-left: 100px;
+}
+figure{
+    margin-bottom: 20px;
+}

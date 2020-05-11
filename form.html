@@ -3,7 +3,7 @@
   <head>
     <title></title>
     <link href="reset.css" rel="stylesheet">
-    <link href="table.css" rel="stylesheet">
+    <link href="form.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -12,26 +12,39 @@
       <li><a href="sale.html">Sales Page</a></li>
     </header>
     <main>
-        <form action="https://rearo43.github.io/cookiesOfSalmon/action.html">
-            <p> Please enter a name for your order.<br/>
-                <input type="text" name="Name"/></p>
-            <p>How many cookies would you like to order? <br/>
-                <input type="number" name="amount"></p>
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label for="email">Email<input type="email" name="email"></label>
-                <label for="phone">Phone Number<input type="text" name="phoneNumber"></label>
-            </fieldset>
-            <p>Date and Time(preferred) for pickup.<br/>
-                <input type="datetime-local" name="pickupDetails"></p>
-            </p>
-            <p>Please select location for pick up.</p><br/>
-            <select name="location">
-                <option value="dubai">Dubai</option>
-                <option value="lima">Lima</option>
-                <option value="paris">Paris</option>
-                <option value="seattle">Seattle</option>
-                <option value="tokyo">Tokyo</option>
-            </select>
+        <form id="orderOnline" action="https://rearo43.github.io/cookiesOfSalmon/action.html">
+            <figure class="tab">Name:
+                <p><input type="text" name="fName" placeholder="First Name..."></p>
+                <p><input type="text" name="lname" placeholder="Last Name..."></p>
+            </figure>
+            <figure class="tab">Contact Information:
+                <p><input type="email" name="email" placeholder="Email..."></p>
+                <p><input type="text" name="phoneNumber" placeholder="Phone Number..."></p>
+                <p><input type="text" name="address" placeholder="Address"></p>
+                <p><input type></p>
+            </figure>
+            <figure class="tab">Order Details:
+                <p>Date for pickup.<br/><input type="date" name="date"></p>
+                <p>Location</p><br/>
+                <select name="location">
+                    <option value="dubai">Dubai</option>
+                    <option value="lima">Lima</option>
+                    <option value="paris">Paris</option>
+                    <option value="seattle">Seattle</option>
+                    <option value="tokyo">Tokyo</option>
+                </select>
+                <script>function open() {
+                    document.getElementById('orderOnline').style.display = 'block';
+                  }
+                  
+                  function close() {
+                    document.getElementById('orderOnline').style.display = 'none';
+                  }
+                  </script>
+            </figure>
+            <div>
+                <button type="submit" id="back" formaction="https://rearo43.github.io/cookiesOfSalmon/action.html">Submit</button>
+            </div>
         </form>
     </main>
+    <script src="form.js"></script>
