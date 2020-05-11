@@ -27,6 +27,10 @@ nav, #bigMiddle, footer, .change{
 
 }
 
+#bigMiddle{
+    height: 250px;
+}
+
 /* middle of pyramid */
 .small-1, .small-2, .small-3{
     width: 35%;
@@ -87,4 +91,35 @@ article{
 .changeColor{
     background-color: darkblue;
 }
+
+.row{
+    display: flex;
+}
+
+.pic{
+    padding: 2%;
+}
+
+iframe{
+    width: 100%;
+    height: 125px;
+    margin-right: 1.5%;
+    overflow: auto;
+    position: relative;
+    bottom: 15px;
+    
+}
+
+.sInfo{
+    text-align: center;
+}
+
+.info{
+    margin-top: -15px;
+}
+
+.move{
+    margin-bottom: 10px;
+}
+
 
