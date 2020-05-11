@@ -1,7 +1,16 @@
 h1{
     text-align: center;
-    font-size: 50px;
-    color: rgba(183, 228, 189, 0.714);
+    font-size: 65px;
+    color: rgba(104, 196, 116, 0.646);
+    font-family: 'Rock Salt', cursive;
+    position: relative;
+    top: 17.5px;
+
+}
+
+p{
+    font-family: 'PT Serif', serif;
+    font-size: medium;
 }
 
 
@@ -9,7 +18,7 @@ body{
     border: 2px dotted rgba(47, 148, 10, 0.854);
     width: 95%;
     margin: 0 auto;
-    background-color: rgb(15, 77, 185);
+    background-color: rgba(15, 77, 185, 0.878);
     border-radius: 11px;
 
 }
@@ -88,10 +97,6 @@ article{
     --nav-color: rgba(207, 209, 212, 0.933);
 }
 
-.changeColor{
-    background-color: darkblue;
-}
-
 .row{
     display: flex;
 }
@@ -120,6 +125,14 @@ iframe{
 
 .move{
     margin-bottom: 10px;
+}
+
+.what{
+    width: 100%;
+    border: 5px solid black;
+    height: 1000px;
+    position: relative;
+    top: 500px;
 }
 
 
