@@ -100,6 +100,3 @@ tokyo.render();
 renderBottomTotals();
 
 
-
-
-
